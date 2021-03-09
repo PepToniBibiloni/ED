@@ -1,0 +1,22 @@
+[GENERATED OBJECT FILE]
+b__main.o
+[PROJECT FILES]
+/home/peptoni/Documentos/ADA/default.gpr
+20210226075135
+[BOUND OBJECT FILES]
+/home/peptoni/Documentos/ADA/obj/dllista.o
+/home/peptoni/Documentos/ADA/obj/main.o
+[GENERATED SOURCE FILES]
+b__main.ads
+b__main.adb
+b__main.ali
+[RESULTING OPTIONS]
+-L/home/peptoni/Documentos/ADA/obj/
+-L/home/peptoni/Documentos/ADA/obj/
+-L/usr/lib/gcc/x86_64-linux-gnu/10/adalib/
+-shared
+-lgnat-10
+-ldl
+[RUN PATH OPTION]
+/usr/lib/gcc/x86_64-linux-gnu/10/adalib/
+/usr/lib

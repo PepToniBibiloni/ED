@@ -1,0 +1,21 @@
+generic
+   type llibre is private;
+package dllista is
+   type nodo;
+   type pnodo is access nodo;
+   type nodo is record
+      x: llibre;
+      sig: pnodo;
+      prev: pnodos;
+   end record;
+   type llista is record
+      primer: pnodo;
+   end record;
+   type llista is limited private;
+private
+   procedure cercarXtitol (primero: in pnodo; x: in llibre.titol; ll: out llibre);
+   procedure insertar(primero: in out pnodo; x: in Integer) ;
+   procedure cercarXISBN (x: in llibre.ISBN);
+   procedure imprimirLlibresAutor(x: in llibre.autor);
+   procedure llistarLlibresAny(x: in llibre.any);
+end dllista;

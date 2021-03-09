@@ -1,0 +1,704 @@
+Se incluyó el miembro del archivo para satisfacer referencia por fichero (símbolo)
+
+/usr/lib/x86_64-linux-gnu/libc_nonshared.a(elf-init.oS)
+                              /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o (__libc_csu_init)
+
+Merging program properties
+
+Removed property 0xc0000002 to merge /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o (0x3) and main.o (not found)
+Removed property 0xc0000002 to merge /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o (not found) and /usr/lib/x86_64-linux-gnu/libc_nonshared.a(elf-init.oS) (0x3)
+Removed property 0xc0000002 to merge /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o (not found) and /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o (0x3)
+Removed property 0xc0000002 to merge /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o (not found) and /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o (0x3)
+
+Biblioteca bajo demanda incluida para satisfacer referencia por fichero (símbolo)
+
+libgnat-9.so.1                b__main.o (__gl_task_dispatching_policy)
+libc.so.6                     /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o (__libc_start_main@@GLIBC_2.2.5)
+
+Secciones de salida descartadas
+
+ .note.gnu.property
+                0x0000000000000000       0x20 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o
+ .note.gnu.property
+                0x0000000000000000       0x20 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o
+ .note.gnu.property
+                0x0000000000000000       0x20 /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 main.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 b__main.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/x86_64-linux-gnu/libc_nonshared.a(elf-init.oS)
+ .note.gnu.property
+                0x0000000000000000       0x20 /usr/lib/x86_64-linux-gnu/libc_nonshared.a(elf-init.oS)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o
+ .note.gnu.property
+                0x0000000000000000       0x20 /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o
+ .note.gnu.property
+                0x0000000000000000       0x20 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+
+Configuración de la Memoria
+
+Nombre           Origen             Longitud           Atributos
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Guión del enlazador y mapa de memoria
+
+LOAD /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o
+LOAD /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o
+LOAD /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o
+LOAD main.o
+LOAD b__main.o
+LOAD /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/libgnat-9.so
+LOAD /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/libdl.so
+LOAD /usr/lib/gcc/x86_64-linux-gnu/9/libgcc_s.so
+START GROUP
+LOAD /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/libgcc_s.so.1
+LOAD /usr/lib/gcc/x86_64-linux-gnu/9/libgcc.a
+END GROUP
+LOAD /usr/lib/gcc/x86_64-linux-gnu/9/libgcc.a
+LOAD /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/libc.so
+START GROUP
+LOAD /lib/x86_64-linux-gnu/libc.so.6
+LOAD /usr/lib/x86_64-linux-gnu/libc_nonshared.a
+LOAD /lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+END GROUP
+LOAD /usr/lib/gcc/x86_64-linux-gnu/9/libgcc_s.so
+START GROUP
+LOAD /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/libgcc_s.so.1
+LOAD /usr/lib/gcc/x86_64-linux-gnu/9/libgcc.a
+END GROUP
+LOAD /usr/lib/gcc/x86_64-linux-gnu/9/libgcc.a
+LOAD /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o
+LOAD /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+                [!provide]                        PROVIDE (__executable_start = SEGMENT_START ("text-segment", 0x0))
+                0x00000000000002a8                . = (SEGMENT_START ("text-segment", 0x0) + SIZEOF_HEADERS)
+
+.interp         0x00000000000002a8       0x1c
+ *(.interp)
+ .interp        0x00000000000002a8       0x1c /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o
+
+.note.gnu.build-id
+                0x00000000000002c4       0x24
+ *(.note.gnu.build-id)
+ .note.gnu.build-id
+                0x00000000000002c4       0x24 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o
+
+.note.ABI-tag   0x00000000000002e8       0x20
+ .note.ABI-tag  0x00000000000002e8       0x20 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o
+
+.hash
+ *(.hash)
+
+.gnu.hash       0x0000000000000308      0x178
+ *(.gnu.hash)
+ .gnu.hash      0x0000000000000308      0x178 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o
+
+.dynsym         0x0000000000000480      0x7c8
+ *(.dynsym)
+ .dynsym        0x0000000000000480      0x7c8 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o
+
+.dynstr         0x0000000000000c48      0x809
+ *(.dynstr)
+ .dynstr        0x0000000000000c48      0x809 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o
+
+.gnu.version    0x0000000000001452       0xa6
+ *(.gnu.version)
+ .gnu.version   0x0000000000001452       0xa6 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o
+
+.gnu.version_d  0x00000000000014f8        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x00000000000014f8        0x0 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o
+
+.gnu.version_r  0x00000000000014f8       0x20
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x00000000000014f8       0x20 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o
+
+.rela.dyn       0x0000000000001518      0x4e0
+ *(.rela.init)
+ *(.rela.text .rela.text.* .rela.gnu.linkonce.t.*)
+ .rela.text     0x0000000000001518        0x0 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o
+ *(.rela.fini)
+ *(.rela.rodata .rela.rodata.* .rela.gnu.linkonce.r.*)
+ *(.rela.data .rela.data.* .rela.gnu.linkonce.d.*)
+ .rela.data.rel.ro
+                0x0000000000001518        0x0 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o
+ .rela.data.rel.local
+                0x0000000000001518       0x18 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o
+ *(.rela.tdata .rela.tdata.* .rela.gnu.linkonce.td.*)
+ *(.rela.tbss .rela.tbss.* .rela.gnu.linkonce.tb.*)
+ *(.rela.ctors)
+ *(.rela.dtors)
+ *(.rela.got)
+ .rela.got      0x0000000000001530       0x78 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o
+ *(.rela.bss .rela.bss.* .rela.gnu.linkonce.b.*)
+ .rela.bss      0x00000000000015a8      0x420 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o
+ *(.rela.ldata .rela.ldata.* .rela.gnu.linkonce.l.*)
+ *(.rela.lbss .rela.lbss.* .rela.gnu.linkonce.lb.*)
+ *(.rela.lrodata .rela.lrodata.* .rela.gnu.linkonce.lr.*)
+ *(.rela.ifunc)
+ .rela.ifunc    0x00000000000019c8        0x0 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o
+ .rela.fini_array
+                0x00000000000019c8       0x18 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o
+ .rela.init_array
+                0x00000000000019e0       0x18 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o
+
+.rela.plt       0x00000000000019f8      0x318
+ *(.rela.plt)
+ .rela.plt      0x00000000000019f8      0x318 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o
+ *(.rela.iplt)
+                0x0000000000002000                . = ALIGN (CONSTANT (MAXPAGESIZE))
+
+.init           0x0000000000002000       0x1b
+ *(SORT_NONE(.init))
+ .init          0x0000000000002000       0x16 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o
+                0x0000000000002000                _init
+ .init          0x0000000000002016        0x5 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+
+.plt            0x0000000000002020      0x220
+ *(.plt)
+ .plt           0x0000000000002020      0x220 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o
+                0x0000000000002030                interfaces__c___elabs
+                0x0000000000002040                system__finalization_root___elabs
+                0x0000000000002050                __gnat_reraise_library_exception_if_any
+                0x0000000000002060                ada__tags___elabb
+                0x0000000000002070                __gnat_finalize
+                0x0000000000002080                system__soft_links__initialize___elabb
+                0x0000000000002090                system__os_lib___elabb
+                0x00000000000020a0                ada__strings__maps___elabs
+                0x00000000000020b0                ada__containers___elabs
+                0x00000000000020c0                ada__text_io___elabs
+                0x00000000000020d0                system__exceptions___elabs
+                0x00000000000020e0                system__exception_table___elabb
+                0x00000000000020f0                system__standard_library__adafinal
+                0x0000000000002100                __gnat_initialize
+                0x0000000000002110                system__object_reader___elabs
+                0x0000000000002120                __gnat_runtime_finalize
+                0x0000000000002130                ada__text_io___elabb
+                0x0000000000002140                system__soft_links___elabs
+                0x0000000000002150                system__file_io___elabb
+                0x0000000000002160                ada__text_io__put__4
+                0x0000000000002170                ada__strings__maps__constants___elabs
+                0x0000000000002180                system__file_io__finalize_body
+                0x0000000000002190                ada__finalization___elabs
+                0x00000000000021a0                system__traceback__symbolic___elabb
+                0x00000000000021b0                ada__tags___elabs
+                0x00000000000021c0                system__dwarf_lines___elabs
+                0x00000000000021d0                ada__io_exceptions___elabs
+                0x00000000000021e0                ada__text_io__finalize_spec
+                0x00000000000021f0                system__secondary_stack__ss_stackIP
+                0x0000000000002200                ada__strings___elabs
+                0x0000000000002210                ada__streams___elabs
+                0x0000000000002220                __gnat_runtime_initialize
+                0x0000000000002230                system__file_control_block___elabs
+ *(.iplt)
+
+.plt.got        0x0000000000002240        0x8
+ *(.plt.got)
+ .plt.got       0x0000000000002240        0x8 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o
+                0x0000000000002240                __cxa_finalize@@GLIBC_2.2.5
+
+.plt.sec
+ *(.plt.sec)
+
+.text           0x0000000000002250      0x635
+ *(.text.unlikely .text.*_unlikely .text.unlikely.*)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ *(.text.hot .text.hot.*)
+ *(SORT_BY_NAME(.text.sorted.*))
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x0000000000002250       0x2f /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o
+                0x0000000000002250                _start
+ .text          0x000000000000227f        0x0 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o
+ *fill*         0x000000000000227f        0x1 
+ .text          0x0000000000002280       0xb9 /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o
+ *fill*         0x0000000000002339        0x1 
+ .text          0x000000000000233a       0x33 main.o
+                0x000000000000233a                _ada_main
+ *fill*         0x000000000000236d        0x1 
+ .text          0x000000000000236e      0x4a1 b__main.o
+                0x000000000000236e                ada_main__Tsec_default_sized_stacksBIP
+                0x0000000000002484                adafinal
+                0x00000000000024ac                adainit
+                0x0000000000002776                main
+                0x00000000000027dc                ada_main___elabb
+ *fill*         0x000000000000280f        0x1 
+ .text          0x0000000000002810       0x75 /usr/lib/x86_64-linux-gnu/libc_nonshared.a(elf-init.oS)
+                0x0000000000002810                __libc_csu_init
+                0x0000000000002880                __libc_csu_fini
+ .text          0x0000000000002885        0x0 /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o
+ .text          0x0000000000002885        0x0 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+ *(.gnu.warning)
+
+.fini           0x0000000000002888        0xd
+ *(SORT_NONE(.fini))
+ .fini          0x0000000000002888        0x8 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o
+                0x0000000000002888                _fini
+ .fini          0x0000000000002890        0x5 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+                [!provide]                        PROVIDE (__etext = .)
+                [!provide]                        PROVIDE (_etext = .)
+                [!provide]                        PROVIDE (etext = .)
+                0x0000000000003000                . = ALIGN (CONSTANT (MAXPAGESIZE))
+                0x0000000000003000                . = SEGMENT_START ("rodata-segment", (ALIGN (CONSTANT (MAXPAGESIZE)) + (. & (CONSTANT (MAXPAGESIZE) - 0x1))))
+
+.rodata         0x0000000000003000      0x222
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata.cst4   0x0000000000003000        0x4 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o
+                0x0000000000003000                _IO_stdin_used
+ *fill*         0x0000000000003004        0x4 
+ .rodata        0x0000000000003008       0x18 main.o
+ .rodata        0x0000000000003020      0x202 b__main.o
+                0x0000000000003030                __gnat_version
+                0x0000000000003048                __gnat_ada_main_program_name
+                0x0000000000003054                mainB
+                0x0000000000003058                system__standard_libraryB
+                0x000000000000305c                system__standard_libraryS
+                0x0000000000003060                adaS
+                0x0000000000003064                ada__text_ioB
+                0x0000000000003068                ada__text_ioS
+                0x000000000000306c                ada__exceptionsB
+                0x0000000000003070                ada__exceptionsS
+                0x0000000000003074                ada__exceptions__last_chance_handlerB
+                0x0000000000003078                ada__exceptions__last_chance_handlerS
+                0x000000000000307c                systemS
+                0x0000000000003080                system__soft_linksB
+                0x0000000000003084                system__soft_linksS
+                0x0000000000003088                system__secondary_stackB
+                0x000000000000308c                system__secondary_stackS
+                0x0000000000003090                system__parametersB
+                0x0000000000003094                system__parametersS
+                0x0000000000003098                system__storage_elementsB
+                0x000000000000309c                system__storage_elementsS
+                0x00000000000030a0                system__soft_links__initializeB
+                0x00000000000030a4                system__soft_links__initializeS
+                0x00000000000030a8                system__stack_checkingB
+                0x00000000000030ac                system__stack_checkingS
+                0x00000000000030b0                system__exception_tableB
+                0x00000000000030b4                system__exception_tableS
+                0x00000000000030b8                system__exceptionsB
+                0x00000000000030bc                system__exceptionsS
+                0x00000000000030c0                system__exceptions__machineB
+                0x00000000000030c4                system__exceptions__machineS
+                0x00000000000030c8                system__exceptions_debugB
+                0x00000000000030cc                system__exceptions_debugS
+                0x00000000000030d0                system__img_intB
+                0x00000000000030d4                system__img_intS
+                0x00000000000030d8                system__tracebackB
+                0x00000000000030dc                system__tracebackS
+                0x00000000000030e0                system__traceback_entriesB
+                0x00000000000030e4                system__traceback_entriesS
+                0x00000000000030e8                system__traceback__symbolicB
+                0x00000000000030ec                system__traceback__symbolicS
+                0x00000000000030f0                ada__containersS
+                0x00000000000030f4                ada__exceptions__tracebackB
+                0x00000000000030f8                ada__exceptions__tracebackS
+                0x00000000000030fc                interfacesS
+                0x0000000000003100                interfaces__cB
+                0x0000000000003104                interfaces__cS
+                0x0000000000003108                system__bounded_stringsB
+                0x000000000000310c                system__bounded_stringsS
+                0x0000000000003110                system__crtlS
+                0x0000000000003114                system__dwarf_linesB
+                0x0000000000003118                system__dwarf_linesS
+                0x000000000000311c                ada__charactersS
+                0x0000000000003120                ada__characters__handlingB
+                0x0000000000003124                ada__characters__handlingS
+                0x0000000000003128                ada__characters__latin_1S
+                0x000000000000312c                ada__stringsS
+                0x0000000000003130                ada__strings__mapsB
+                0x0000000000003134                ada__strings__mapsS
+                0x0000000000003138                system__bit_opsB
+                0x000000000000313c                system__bit_opsS
+                0x0000000000003140                system__unsigned_typesS
+                0x0000000000003144                ada__strings__maps__constantsS
+                0x0000000000003148                system__address_imageB
+                0x000000000000314c                system__address_imageS
+                0x0000000000003150                system__img_unsB
+                0x0000000000003154                system__img_unsS
+                0x0000000000003158                system__ioB
+                0x000000000000315c                system__ioS
+                0x0000000000003160                system__mmapB
+                0x0000000000003164                system__mmapS
+                0x0000000000003168                ada__io_exceptionsS
+                0x000000000000316c                system__mmap__os_interfaceB
+                0x0000000000003170                system__mmap__os_interfaceS
+                0x0000000000003174                system__mmap__unixS
+                0x0000000000003178                system__os_libB
+                0x000000000000317c                system__os_libS
+                0x0000000000003180                system__case_utilB
+                0x0000000000003184                system__case_utilS
+                0x0000000000003188                system__stringsB
+                0x000000000000318c                system__stringsS
+                0x0000000000003190                system__object_readerB
+                0x0000000000003194                system__object_readerS
+                0x0000000000003198                system__val_lliB
+                0x000000000000319c                system__val_lliS
+                0x00000000000031a0                system__val_lluB
+                0x00000000000031a4                system__val_lluS
+                0x00000000000031a8                system__val_utilB
+                0x00000000000031ac                system__val_utilS
+                0x00000000000031b0                system__exception_tracesB
+                0x00000000000031b4                system__exception_tracesS
+                0x00000000000031b8                system__wch_conB
+                0x00000000000031bc                system__wch_conS
+                0x00000000000031c0                system__wch_stwB
+                0x00000000000031c4                system__wch_stwS
+                0x00000000000031c8                system__wch_cnvB
+                0x00000000000031cc                system__wch_cnvS
+                0x00000000000031d0                system__wch_jisB
+                0x00000000000031d4                system__wch_jisS
+                0x00000000000031d8                ada__streamsB
+                0x00000000000031dc                ada__streamsS
+                0x00000000000031e0                ada__tagsB
+                0x00000000000031e4                ada__tagsS
+                0x00000000000031e8                system__htableB
+                0x00000000000031ec                system__htableS
+                0x00000000000031f0                system__string_hashB
+                0x00000000000031f4                system__string_hashS
+                0x00000000000031f8                interfaces__c_streamsB
+                0x00000000000031fc                interfaces__c_streamsS
+                0x0000000000003200                system__file_ioB
+                0x0000000000003204                system__file_ioS
+                0x0000000000003208                ada__finalizationS
+                0x000000000000320c                system__finalization_rootB
+                0x0000000000003210                system__finalization_rootS
+                0x0000000000003214                system__file_control_blockS
+                0x0000000000003218                system__memoryB
+                0x000000000000321c                system__memoryS
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr   0x0000000000003224       0x6c
+ *(.eh_frame_hdr)
+ .eh_frame_hdr  0x0000000000003224       0x6c /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o
+                0x0000000000003224                __GNU_EH_FRAME_HDR
+ *(.eh_frame_entry .eh_frame_entry.*)
+
+.eh_frame       0x0000000000003290      0x1b8
+ *(.eh_frame)
+ .eh_frame      0x0000000000003290       0x30 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o
+                                         0x2c (tamaño antes de la relajación)
+ *fill*         0x00000000000032c0        0x0 
+ .eh_frame      0x00000000000032c0       0x28 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o
+                                         0x40 (tamaño antes de la relajación)
+ .eh_frame      0x00000000000032e8       0x18 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o
+                                         0x30 (tamaño antes de la relajación)
+ .eh_frame      0x0000000000003300       0x20 main.o
+                                         0x38 (tamaño antes de la relajación)
+ .eh_frame      0x0000000000003320       0xc8 b__main.o
+                                         0xe0 (tamaño antes de la relajación)
+ .eh_frame      0x00000000000033e8       0x5c /usr/lib/x86_64-linux-gnu/libc_nonshared.a(elf-init.oS)
+                                         0x78 (tamaño antes de la relajación)
+ .eh_frame      0x0000000000003444        0x4 /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o
+ *(.eh_frame.*)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges*)
+                0x0000000000004c98                . = DATA_SEGMENT_ALIGN (CONSTANT (MAXPAGESIZE), CONSTANT (COMMONPAGESIZE))
+
+.eh_frame
+ *(.eh_frame)
+ *(.eh_frame.*)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges*)
+
+.tdata          0x0000000000004c98        0x0
+                [!provide]                        PROVIDE (__tdata_start = .)
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array  0x0000000000004c98        0x0
+                [!provide]                        PROVIDE (__preinit_array_start = .)
+ *(.preinit_array)
+                [!provide]                        PROVIDE (__preinit_array_end = .)
+
+.init_array     0x0000000000004c98        0x8
+                0x0000000000004c98                PROVIDE (__init_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.init_array.*) SORT_BY_INIT_PRIORITY(.ctors.*))
+ *(.init_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+ .init_array    0x0000000000004c98        0x8 /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o
+                0x0000000000004ca0                PROVIDE (__init_array_end = .)
+
+.fini_array     0x0000000000004ca0        0x8
+                [!provide]                        PROVIDE (__fini_array_start = .)
+ *(SORT_BY_INIT_PRIORITY(.fini_array.*) SORT_BY_INIT_PRIORITY(.dtors.*))
+ *(.fini_array EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+ .fini_array    0x0000000000004ca0        0x8 /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o
+                [!provide]                        PROVIDE (__fini_array_end = .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT_BY_NAME(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT_BY_NAME(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro    0x0000000000004ca8        0x0
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro .data.rel.ro.* .gnu.linkonce.d.rel.ro.*)
+ .data.rel.ro   0x0000000000004ca8        0x0 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o
+
+.dynamic        0x0000000000004ca8      0x210
+ *(.dynamic)
+ .dynamic       0x0000000000004ca8      0x210 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o
+                0x0000000000004ca8                _DYNAMIC
+
+.got            0x0000000000004eb8      0x148
+ *(.got.plt)
+ .got.plt       0x0000000000004eb8      0x120 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o
+                0x0000000000004eb8                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+ *(.got)
+ .got           0x0000000000004fd8       0x28 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o
+ *(.igot)
+                0x0000000000005000                . = DATA_SEGMENT_RELRO_END (., 0x0)
+
+.data           0x0000000000005000       0x13
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x0000000000005000        0x4 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o
+                0x0000000000005000                data_start
+                0x0000000000005000                __data_start
+ .data          0x0000000000005004        0x0 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o
+ .data          0x0000000000005004        0x0 /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o
+ *fill*         0x0000000000005004        0x4 
+ .data.rel.local
+                0x0000000000005008        0x8 /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o
+                0x0000000000005008                __dso_handle
+ .data          0x0000000000005010        0x0 main.o
+ .data          0x0000000000005010        0x3 b__main.o
+                0x0000000000005010                ada_main_E
+ .data          0x0000000000005013        0x0 /usr/lib/x86_64-linux-gnu/libc_nonshared.a(elf-init.oS)
+ .data          0x0000000000005013        0x0 /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o
+ .data          0x0000000000005013        0x0 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+
+.tm_clone_table
+                0x0000000000005018        0x0
+ .tm_clone_table
+                0x0000000000005018        0x0 /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o
+ .tm_clone_table
+                0x0000000000005018        0x0 /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o
+
+.data1
+ *(.data1)
+                0x0000000000005013                _edata = .
+                [!provide]                        PROVIDE (edata = .)
+                0x0000000000005018                . = .
+                0x0000000000005013                __bss_start = .
+
+.bss            0x0000000000005020     0x2a50
+ *(.dynbss)
+ .dynbss        0x0000000000005020      0x1ea /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o
+                0x0000000000005020                __gl_task_dispatching_policy
+                0x0000000000005040                __gnat_default_ss_size
+                0x0000000000005048                system__os_lib_E
+                0x000000000000504c                ada__containers_E
+                0x0000000000005060                system__soft_links_E
+                0x0000000000005080                system__traceback__symbolic_E
+                0x0000000000005090                gnat_envp
+                0x0000000000005098                ada__finalization_E
+                0x00000000000050a0                __gl_interrupt_states
+                0x00000000000050a8                __gnat_finalize_library_objects
+                0x00000000000050b0                system__soft_links__initialize_E
+                0x00000000000050b8                ada__io_exceptions_E
+                0x00000000000050c0                __gnat_binder_ss_count
+                0x00000000000050d0                ada__tags_E
+                0x00000000000050d4                __gl_main_cpu
+                0x00000000000050d8                __gnat_default_ss_pool
+                0x00000000000050e0                system__file_io_E
+                0x00000000000050e2                __gl_locking_policy
+                0x00000000000050e8                __gl_time_slice_val
+                0x00000000000050f0                gnat_exit_status
+                0x00000000000050f4                __gl_leap_seconds_support
+                0x00000000000050f8                __gl_unreserve_all_interrupts
+                0x0000000000005100                system__dwarf_lines_E
+                0x0000000000005102                __gl_wc_encoding
+                0x0000000000005104                ada__strings_E
+                0x0000000000005120                ada__streams_E
+                0x0000000000005128                gnat_argv
+                0x0000000000005130                interfaces__c_E
+                0x0000000000005140                system__file_control_block_E
+                0x0000000000005142                __gl_queuing_policy
+                0x0000000000005160                __gl_num_specific_dispatching
+                0x0000000000005170                __gl_main_priority
+                0x0000000000005174                ada__text_io_E
+                0x0000000000005178                __gl_priority_specific_dispatching
+                0x0000000000005180                system__object_reader_E
+                0x0000000000005188                system__exceptions_E
+                0x00000000000051a0                __gl_detect_blocking
+                0x00000000000051c0                gnat_argc
+                0x00000000000051d0                __gl_num_interrupt_states
+                0x00000000000051d8                system__exception_table_E
+                0x00000000000051e0                __gl_default_stack_size
+                0x0000000000005200                system__finalization_root_E
+                0x0000000000005202                ada__strings__maps__constants_E
+                0x0000000000005208                ada__strings__maps_E
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x000000000000520a        0x0 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/Scrt1.o
+ .bss           0x000000000000520a        0x0 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crti.o
+ .bss           0x000000000000520a        0x1 /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o
+ .bss           0x000000000000520b        0x0 main.o
+ *fill*         0x000000000000520b       0x15 
+ .bss           0x0000000000005220     0x2850 b__main.o
+ .bss           0x0000000000007a70        0x0 /usr/lib/x86_64-linux-gnu/libc_nonshared.a(elf-init.oS)
+ .bss           0x0000000000007a70        0x0 /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o
+ .bss           0x0000000000007a70        0x0 /usr/lib/gcc/x86_64-linux-gnu/9/../../../x86_64-linux-gnu/crtn.o
+ *(COMMON)
+                0x0000000000007a70                . = ALIGN ((. != 0x0)?0x8:0x1)
+
+.lbss
+ *(.dynlbss)
+ *(.lbss .lbss.* .gnu.linkonce.lb.*)
+ *(LARGE_COMMON)
+                0x0000000000007a70                . = ALIGN (0x8)
+                0x0000000000007a70                . = SEGMENT_START ("ldata-segment", .)
+
+.lrodata
+ *(.lrodata .lrodata.* .gnu.linkonce.lr.*)
+
+.ldata          0x0000000000009a70        0x0
+ *(.ldata .ldata.* .gnu.linkonce.l.*)
+                0x0000000000009a70                . = ALIGN ((. != 0x0)?0x8:0x1)
+                0x0000000000009a70                . = ALIGN (0x8)
+                0x0000000000007a70                _end = .
+                [!provide]                        PROVIDE (end = .)
+                0x0000000000009a70                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x2a
+ *(.comment)
+ .comment       0x0000000000000000       0x2a /usr/lib/gcc/x86_64-linux-gnu/9/crtbeginS.o
+                                         0x2b (tamaño antes de la relajación)
+ .comment       0x000000000000002a       0x2b main.o
+ .comment       0x000000000000002a       0x2b b__main.o
+ .comment       0x000000000000002a       0x2b /usr/lib/gcc/x86_64-linux-gnu/9/crtendS.o
+
+.gnu.build.attributes
+ *(.gnu.build.attributes .gnu.build.attributes.*)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line .debug_line.* .debug_line_end)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_addr
+ *(.debug_addr)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(main elf64-x86-64)

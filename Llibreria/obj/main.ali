@@ -1,0 +1,102 @@
+V "GNAT Lib v10"
+M P W=b
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P SS ZX
+
+RN
+RV NO_ALLOCATORS
+RV NO_IO
+RV NO_LOCAL_ALLOCATORS
+RV NO_SECONDARY_STACK
+RV NO_STANDARD_ALLOCATORS_AFTER_ELABORATION
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U main%b		main.adb		fe7ea036 NE OO SU
+W ada%s			ada.ads			ada.ali
+Z ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W dllista%s		dllista.adb		dllista.ali
+Z system.concat_2%s	s-conca2.adb		s-conca2.ali
+Z system.img_int%s	s-imgint.adb		s-imgint.ali
+Z system.secondary_stack%s  s-secsta.adb	s-secsta.ali
+Z system.val_int%s	s-valint.adb		s-valint.ali
+
+D ada.ads		20200723063517 76789da1 ada%s
+D a-except.ads		20200723063517 a7106115 ada.exceptions%s
+D a-inteio.ads		20200723063517 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20200723063517 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20200723063517 119b8fb3 ada.streams%s
+D a-tags.ads		20200723063517 491b781d ada.tags%s
+D a-textio.ads		20200723063517 aef4d56d ada.text_io%s
+D a-tiinio.ads		20200723063517 390edddb ada.text_io.integer_io%s
+D a-unccon.ads		20200723063517 0e9b276f ada.unchecked_conversion%s
+D dllista.ads		20210308185354 08e555c1 dllista%s
+D dllista.adb		20210308190432 bb1cb0b9 dllista%b
+D interfac.ads		20200723063517 5ab55268 interfaces%s
+D i-cstrea.ads		20200723063517 e53d8b8e interfaces.c_streams%s
+D main.adb		20210308190248 586f209a main%b
+D system.ads		20200723063517 4635ec04 system%s
+D s-conca2.ads		20200723063517 02a0d7d0 system.concat_2%s
+D s-crtl.ads		20200723063517 0ebbdb71 system.crtl%s
+D s-exctab.ads		20200723063517 54135002 system.exception_table%s
+D s-ficobl.ads		20200723063517 078245e4 system.file_control_block%s
+D s-imgint.ads		20200723063517 02dbe0c2 system.img_int%s
+D s-parame.ads		20200723063517 48ec542b system.parameters%s
+D s-secsta.ads		20200723063517 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20200723063517 a7318a92 system.soft_links%s
+D s-stache.ads		20200723063517 a37c21ec system.stack_checking%s
+D s-stalib.ads		20200723063517 09bd3940 system.standard_library%s
+D s-stoele.ads		20200723063517 2dc34a04 system.storage_elements%s
+D s-traent.ads		20200723063517 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20200723063517 34867c83 system.unsigned_types%s
+D s-valint.ads		20200723063517 b5ff6963 system.val_int%s
+D s-wchcon.ads		20200723063517 1b7d22d2 system.wch_con%s
+G a e
+G c Z b b [main standard 3 11 none]
+G r i none [main standard 3 11 none] [dllista standard 5 9 none]
+X 1 ada.ads
+16K9*Ada 20e8 14|1r6 1r22
+X 7 a-textio.ads
+57K13*Text_IO 727e16 14|1w10 1r26
+273U14*Skip_Line 14|15s10
+465U14*Put 14|25s7 27s7 29s7 31s7 54s10 58s10 62s10 66s10
+481U14*Get_Line 14|13s7
+495V13*Get_Line{string} 14|32s29 47s21 67s27 73s24
+508U14*Put_Line 14|36s7 37s7 38s7 39s7 40s7 41s7 42s7
+X 10 dllista.ads
+5k9*dllista 29e12 14|2w6 4r24
+6R9 llibre 14|7r8[4] 23r32[4]
+7i7 any{integer} 14|32m10[4]
+8a7 autor{string} 14|28m24[4]
+9a7 titol{string} 14|26m24[4]
+10a7 isbm{string} 14|30m24[4]
+13R9 node 14|45r16[4]
+14P9 pnode(13R9[14|4]) 14|6r17[4]
+19U14 insertar 14|52s10[4]
+21U14 cercarXtitol 14|56s10[4]
+22U14 cercarXisbm 14|60s10[4]
+23U14 cercarXautor 14|64s10[4]
+24U14 cercarXany 14|68s10[4]
+X 14 main.adb
+3U11*Main 3b11 75l5 75t9
+4K12 List[10|5] 5r8 6r12
+6p4 primer{10|14P9[4]} 45m4 52m19 52r19 56r23 60r22 64r23 68r21
+7r4 ll{10|6R9[4]} 51m18 51r18 52r26
+8i4 c{integer} 47m4 48r10 49r12 67m10 68r28 73m7
+9a4 aux{string} 55m24 55r24 56m30 56r30 59m24 59r24 60m29 60r29 63m24 63r24
+. 64m30 64r30
+10U15 lecturaString 10b15 10=29 22l8 22t21 26s7 28s7 30s7 55s10 59s10 63s10
+10a29 tmp{string} 13m16 14r13 17r13 18r28 19m13
+11i7 n{natural} 13m20 14r10 17r11 18r22
+18i14 var{integer} 19r17
+23U14 lectura 23b14 23=22 33l8 33t15 51s10
+23r22 ll{10|6R9[4]} 26m21 26r21 28m21 28r21 30m21 30r21 32m7
+34U14 menu 34b14 43l8 43t12 46s4 72s7
+

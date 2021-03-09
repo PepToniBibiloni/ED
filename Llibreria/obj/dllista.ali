@@ -1,0 +1,105 @@
+V "GNAT Lib v10"
+A -gnatA
+A -mtune=generic
+A -march=x86-64
+P ZX
+
+RN
+RV NO_ALLOCATORS
+RV NO_IO
+RV NO_LOCAL_ALLOCATORS
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+RV NO_IMPLEMENTATION_PRAGMAS
+RV SPARK_05
+
+U dllista%b		dllista.adb		1d0d3015 NE OO PK GE IL
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+U dllista%s		dllista.ads		505a0908 BN EE NE OO PK GE IL
+W ada%s			ada.ads			ada.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+D ada.ads		20200723063517 76789da1 ada%s
+D a-except.ads		20200723063517 a7106115 ada.exceptions%s
+D a-inteio.ads		20200723063517 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20200723063517 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20200723063517 119b8fb3 ada.streams%s
+D a-tags.ads		20200723063517 491b781d ada.tags%s
+D a-textio.ads		20200723063517 aef4d56d ada.text_io%s
+D a-tiinio.ads		20200723063517 390edddb ada.text_io.integer_io%s
+D a-unccon.ads		20200723063517 0e9b276f ada.unchecked_conversion%s
+D dllista.ads		20210308185354 08e555c1 dllista%s
+D dllista.adb		20210308190432 bb1cb0b9 dllista%b
+D interfac.ads		20200723063517 5ab55268 interfaces%s
+D i-cstrea.ads		20200723063517 e53d8b8e interfaces.c_streams%s
+D system.ads		20200723063517 4635ec04 system%s
+D s-crtl.ads		20200723063517 0ebbdb71 system.crtl%s
+D s-exctab.ads		20200723063517 54135002 system.exception_table%s
+D s-ficobl.ads		20200723063517 078245e4 system.file_control_block%s
+D s-parame.ads		20200723063517 48ec542b system.parameters%s
+D s-secsta.ads		20200723063517 20bbe636 system.secondary_stack%s
+D s-soflin.ads		20200723063517 a7318a92 system.soft_links%s
+D s-stache.ads		20200723063517 a37c21ec system.stack_checking%s
+D s-stalib.ads		20200723063517 09bd3940 system.standard_library%s
+D s-stoele.ads		20200723063517 2dc34a04 system.storage_elements%s
+D s-traent.ads		20200723063517 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20200723063517 34867c83 system.unsigned_types%s
+D s-wchcon.ads		20200723063517 1b7d22d2 system.wch_con%s
+G a e
+G c Z s b [dllista standard 5 9 none]
+X 1 ada.ads
+16K9*Ada 20e8 10|1r6 1r22 2r6 2r30 11|1r6 1r22
+X 3 a-inteio.ads
+18K13*Integer_Text_IO[8|46] 10|2w10 2r34
+X 7 a-textio.ads
+57K13*Text_IO 727e16 10|1w10 1r26 11|1w10 1r26
+508U14*Put_Line 11|20s7 21s7 22s7 23s7 24s7 41s10 59s10 83s10
+X 10 dllista.ads
+5k9*dllista 26E9 29l5 29e12 11|2b14 90l5 90t12
+6R9*llibre 11e17 16r10 19r52 20r36 11|3r52 18r36
+7i7 any{integer} 11|7r34 7r43 24r41 82r36 83r37 84r17
+8a7 autor{string} 11|23r29 72r17
+9a7 titol{string} 11|21r30 35r36 38r14
+10a7 isbm{string} 11|22r28 53r36 56r14
+12R9*dllista 26c9 28e14
+13R9*node 14r29 15c9 18e14 27r15 11|10r15
+14P9*pnode(13R9) 17r12 19r39 21r39 22r38 23r39 24r37 11|3r39 4r17 26r40 27r10
+. 44r39 45r10 62r40 63r10 78r38 79r10
+15R9*node
+16r7 x{6R9} 11|7r32 35r34 38r12 39r27 53r34 56r12 57r27 72r15 73r30 82r34
+. 83r35 84r15 85r30
+17p7 sig{14P9} 11|8r24 11m9 15m13 36r15 54r15 75r15 87r15
+19U14*insertar 19=23 19>46 11|3b14 17l8 17t16
+19p23 primero{14P9} 11|3b23 6r22 13m10
+19r46 x{6R9} 11|3b46 7r41 10r30
+20U14*imprimirLlibre 20>29 11|18b14 25l8 25t22 39s10 57s10 73s13 85s13
+20r29 ll{6R9} 11|18b29 21r27 22r25 23r26 24r38
+21U14*cercarXtitol 21>27 21=46 11|26b14 43l8 43t20
+21p27 primero{14P9} 11|26b28 34r12
+21a46 x{string} 11|26b47 29r11 30r22 31m13 35r45 38r20
+22U14*cercarXisbm 22>26 22=45 11|44b14 61l8 61t19
+22p26 primero{14P9} 11|44b27 52r12
+22a45 x{string} 11|44b46 47r11 48r22 49m13 53r44 56r19
+23U14*cercarXautor 23>27 23=46 11|62b14 77l8 77t20
+23p27 primero{14P9} 11|62b28 70r12
+23a46 x{string} 11|62b47 65r11 66r22 67m13 72r23
+24U14*cercarXany 24>25 24>44 11|78b14 89l8 89t18
+24p25 primero{14P9} 11|78b26 81r12
+24i44 x{integer} 11|78b45 82r43 84r21
+27r7 primer{15R9}
+X 11 dllista.adb
+4p7 p{10|14P9} 6m18 7r13 7r30 8r15 8m18 8r22 11r15
+4p10 pp{10|14P9} 6m7 8m10 12r10 15r10
+4p14 r{10|14P9} 10m7 10r21 11r7 13r20 15r19
+27p7 p{10|14P9} 34m7 35r13 35r32 36m10 36r13 38r10 39r25
+30i14 var{integer} 31r15
+45p7 p{10|14P9} 52m7 53r13 53r32 54m10 54r13 56r10 57r25
+48i14 var{integer} 49r15
+63p7 p{10|14P9} 70m7 71r13 72r13 73r28 75m10 75r13
+66i14 var{integer} 67r15
+79p7 p{10|14P9} 81m7 82r13 82r32 83r33 84r13 85r28 87m10 87r13
+
